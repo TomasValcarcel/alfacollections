@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+  font-family: 'Inter', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 3.2rem
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 300px;
+  line-height: 25px;
+  margin: 10px;
+}
+
+.nav {
+  background-color: rgb(218, 35, 35);
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-ul {
+  list-style: none;
+  display: flex;
+  width: 1050px;
+  justify-content: space-between;
+  margin-right: 350px;
+}
+
+.nav-ul-li {
+  margin-right: 240px;
+}
+
+.nav-ul-li-a {
+  text-decoration: none;
+  color: white; 
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-registros{
+  display: flex;
+  height: 30px;
+  width: 30px;
+  justify-content: space-evenly;
+  margin-right: 90px;
+}
+
+.nav-logo-img {
+  width: 80px;
+  height: 80px;
+}
+
+
+.productos-img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  margin: 5px;
+  align-items: center;
+}
+
+.main {
+  padding: 20px 30px;
+}
+
+.header-img {
+  height: 600px;
+  width: 100%;
+}
+
+.banner-img {
+  height: 600px;
+  width: 100%;
+}
+
+.footer {
+  padding: 3px 10px;
+  background-color: rgb(218, 35, 35);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-svg {
+  width: 30px;
+  height: 30px;
+  fill: black;
+  margin-right: 20px
+}
+
+.footer-ul {
+  list-style: none; 
+  margin-right: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-a {
+  color: black;
+  font-size: 1.1em;
+  text-decoration: none
+}
+
+.text-black {
+  color: rgba(26, 25, 25, 0.993);
+  text-align: center;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.separacion-cash {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+.text-community-p{
+  font-size: 25px;
+  padding-left: 200px;
+  padding-right: 200px;
+  margin-bottom: 120px;
+  margin-top: 20px;
+}
+
+.text-community-margin{
+  margin-top: 80px;
+}
+
+.margin-banner-star{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.box-top {
+  padding: 4px 0;
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.gallery img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  margin: 5px;
+}
+
+.productos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.productos-img2 {
+  width: 300px;
+  height: 300px;
+  margin: 5px;
+  align-items: center;
+}
+
+.productos figure {
+  width: 20%;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 0;
+  text-align: center;
+}
+
+.productos figure figcaption {
+  font-size: 1.2em;
+  text-align: center;
+  color: black;
+}
+
+.productos figure button {
+  border: none;
+  padding: 4px;
+  background-color: rgb(218, 35, 35);
+  border-radius: 3px;
+  color: white;
+  margin-top: 10px;
+  
+}
+
+.productos figure button:hover {
+  background-color: rgb(218, 35, 35);
+  color: black
+}
+
+.filters {
+  padding: 0 20px 30px 30px;
+}
+
+.filters a {
+  font-size: .9em;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  margin-bottom: 4px;
+}
+
+.filters a:hover {
+  background-color: white;
+  color: red;
+}
+
+.filters span {
+  display: block;
+  color: black;
+  margin: 10px 0;
+  letter-spacing: 1px;
+  font-size: .9em;
+}
+
+.filters select {
+  color: black;
+  border: none;
+  background-color: white;
+  margin-bottom: 10px;
+  font-size: .9em;
+}
+
+.filters li {
+  padding-left: 10px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.actions button {
+  margin-left: 10px;
+  background-color: rgb(218, 35, 35);
+  color: white;
+  padding: 6px;
+  border: none;
+  border-radius: 3px;
+}
+
+.actions input {
+  padding: 6px;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.tienda {
+  display: grid;
+  grid-template-columns: 20% repeat(2, 1fr);
+  grid-template-rows: 80px repeat(3, 300px);
+  gap: 5px;
+  grid-template-areas:
+    "actions actions actions"
+    "filters prod1 prod1"
+    "filters prod2 prod3"
+}
+
+.tienda .actions {
+  padding: 0 30px;
+  grid-area: actions;
+}
+
+.tienda .filters {
+  grid-area: filters;
+}
+
+.tienda .prod1 {
+  grid-area: prod1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.tienda .prod1 p {
+  width: 50%;
+  margin-left: 50px;
+}
+
+.tienda .prod1 img {
+  width: 350px;
+  height: 350px;
+  margin-bottom: 20px;
+}
+
+.tienda .prod2 {
+  grid-area: prod2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  margin-right: 20px;
+}
+
+.tienda .prod2 img {
+  width: 330px;
+  height: 300px;
+  margin-top: 50px;
+}
+
+.tienda .prod3 {
+  grid-area: prod3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  margin-left: 20px;
+}
+
+.tienda .prod3 img {
+  width: 350px;
+  height: 350px;
+
+}
+
+.tienda section {
+  border-radius: 10px;
+}
+
+
+
+.img-contact {
+  margin-bottom: 55px;
+  margin-right: 50px;
+  height: 800px;
+  width: 800px;
+}
+
+
+.form {
+  display: grid;
+  grid-template-columns: 800px 800px;
+}
+
+.section-form {
+  margin-top: 50px;
+}
+
+.section-title {
+  font-size: 25px;
+  margin-bottom: 20px;
+  white-space: nowrap;
+  margin-left: 20px;
+}
+
+.contactar-espacio {
+  font-size: 15px;
+  font-weight: 400;
+  padding-top: 10px;
+  display: block;
+  margin-left: 20px;
+}
+
+.contactar-input{
+  color: white border-radius: 0;
+  border: 0;
+  border-bottom: 2px solid rgb(218, 35, 35);
+  padding: 12px 0;
+  width: 800px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+
+
+.contacto-enviar{
+  display: block;
+  font-size: 20px;
+  border-radius: 0;
+  color: white;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  height: 80px;
+  background: rgb(218, 35, 35);
+  margin-left: 20px;
+}
+
+/*clases responsive*/
+.nav-logo{
+}
