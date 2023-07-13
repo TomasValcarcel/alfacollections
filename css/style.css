@@ -7,6 +7,12 @@
     box-sizing: border-box;
 }
 
+.html{
+    font-size: 92.5%;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+}
 
 .nav {
     background-color: rgb(218, 35, 35);
@@ -35,9 +41,10 @@
 .nav__ul-options__link {
     text-decoration: none;
     color: white;
-    font-size: 17px;
     margin-left: 105px;
-    width: 160px;
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .nav-registros {
@@ -48,33 +55,91 @@
     margin-right: 30px;
 }
 
-
 .box-top {
     padding: 4px 0;
     text-align: center;
 }
 
-@media (max-width 1720px){
-    .nav__ul{
+@media (max-width: 1720px) {
+    .nav__ul {
         padding-left: 35px;
     }
 }
 
-@media (max-width 1474px){
-    .nav__ul{
+@media (max-width: 1474px) {
+    .nav__ul {
         padding-left: 0px;
+        width: 170px;
     }
-    .nav__ul-options__link{
+    
+    .nav__ul-options__link {
         padding: 10px 45px;
     }
-    .nav__ul-options{
+    
+    .nav__ul-options {
         padding: 1px;
     }
+    
+    .nav-registros {
+        padding: 0px 100px;
+        width: 60px;
+    }
 }
+
+@media (max-width: 1090px) {
+    .nav__ul {
+        width: 150px;
+        margin-right: 140px;
+    }
+    
+    .nav__ul-options__link {
+        padding: 10px 45px;
+    }
+}
+
+@media (max-width: 725px){
+    .nav__ul {
+        width: 120px;
+        margin-right: 150px;
+    }
+    
+    .nav__ul-options__link {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 776px){
+    .nav{
+        width: 800px;
+    }
+    .html{
+        width: 800px;
+    }
+}
+
+@media (max-width: 716px){
+    .nav{
+        width: 800px;
+    }
+}
+
+@media (max-width: 635px){
+    .nav{
+        height: 100px;
+        width: 800px;
+        padding: 0px 50px;
+    }
+    .banner__img{
+        width: 2000%;
+    } 
+    .html{
+        width: 800px;
+    }
+}
+
 .header__img {
     width: 100%;
-    height: 600px;
-    object-fit: cover;
+    height: 100%;
 }
 
 .main--gallery {
@@ -110,7 +175,7 @@
 }
 
 .productos__figure {
-    width: 20%;
+    width: 350px;
     margin-bottom: 30px;
     margin-top: 20px;
     border-radius: 5px;
@@ -153,12 +218,12 @@
 
 button:hover {
     background-color: rgb(218, 35, 35);
-    color: black
+    color: black;
 }
 
 .banner__img {
-    height: 600px;
     width: 100%;
+    height: 100%;
 }
 
 .footer {
@@ -173,7 +238,7 @@ button:hover {
     width: 30px;
     height: 30px;
     fill: black;
-    margin-right: 20px
+    margin-right: 20px;
 }
 
 .footer__ul {
@@ -186,7 +251,7 @@ button:hover {
 .footer__a {
     color: black;
     font-size: 1.1em;
-    text-decoration: none
+    text-decoration: none;
 }
 
 .productos__section {
@@ -203,7 +268,7 @@ button:hover {
 }
 
 .productos__figure-products {
-    width: 20%;
+    width: 350px;
     margin-bottom: 30px;
     margin-top: 20px;
     border-radius: 5px;
@@ -238,7 +303,7 @@ button:hover {
     margin-bottom: 4px;
 }
 
-.filters a:hover {
+.filters__a:hover {
     background-color: white;
     color: red;
 }
@@ -292,7 +357,7 @@ button:hover {
     grid-template-areas:
         "actions actions actions"
         "filters prod1 prod1"
-        "filters prod2 prod3"
+        "filters prod2 prod3";
 }
 
 .tienda .actions {
@@ -355,13 +420,34 @@ button:hover {
     border-radius: 10px;
 }
 
-.nosotros-pad{
+.nosotros-pad {
     padding: 20px 30px;
 }
 
 .banner__img {
     height: 600px;
     width: 100%;
+}
+
+.h2__nosotros{
+    color: rgba(26, 25, 25, 0.993);
+    text-align: center;
+}
+
+.h2__nosotros-community{
+    font-size: 70px;
+    margin-top: 80px;
+    color: rgba(26, 25, 25, 0.993);
+    text-align: center;
+    font-weight: bold;
+}
+
+.h2__nosotros-p{
+    font-size: 25px;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-bottom: 120px;
+    margin-top: 20px;
 }
 
 .contact__img {
@@ -402,7 +488,7 @@ button:hover {
     margin-left: 20px;
     border: 0;
     border-bottom: 2px solid rgb(218, 35, 35);
-    color: white
+    color: white;
 }
 
 .contacto--enviar {
