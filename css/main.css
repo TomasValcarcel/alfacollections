@@ -423,4 +423,13 @@
   text-decoration: none;
 }
 
+.error__text {
+  text-align: center;
+  color: rgb(218, 35, 35);
+}
+.error__link {
+  text-align: center;
+  color: black;
+}
+
 /*# sourceMappingURL=main.css.map */

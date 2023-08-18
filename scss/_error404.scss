@@ -1,0 +1,11 @@
+
+.error{
+    &__text{
+        text-align: center;
+        color: $mainColor;
+    }
+    &__link{
+        text-align: center;
+        color: $textColor;
+    }
+}
