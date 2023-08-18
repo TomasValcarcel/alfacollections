@@ -1,0 +1,25 @@
+
+.footer {
+    padding: 3px 10px;
+    background-color: $mainColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__svg {
+        width: 30px;
+        height: 30px;
+        fill: $textColor;
+        margin-right: 20px;
+    }
+    &__ul {
+        list-style: none;
+        margin-right: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__a {
+        color: $textColor;
+        font-size: 1.1em;
+        text-decoration: none;
+    }
+}

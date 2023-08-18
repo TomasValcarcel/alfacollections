@@ -424,11 +424,6 @@ button:hover {
     padding: 20px 30px;
 }
 
-.banner__img {
-    height: 600px;
-    width: 100%;
-}
-
 .h2__nosotros{
     color: rgba(26, 25, 25, 0.993);
     text-align: center;

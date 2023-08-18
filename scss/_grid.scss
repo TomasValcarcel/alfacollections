@@ -1,0 +1,170 @@
+// proximamente grid
+.filters {
+    padding: 0 20px 30px 30px;
+    &__a {
+        font-size: .9em;
+        text-decoration: none;
+        background-color: $secondaryColor;
+        color: $textColor;
+        margin-bottom: 4px;
+        &:hover {
+            background-color: $secondaryColor;
+            color: $mainColor;
+        }
+    }
+    &__span {
+        display: block;
+        color: $textColor;
+        margin: 10px 0;
+        letter-spacing: 1px;
+        font-size: .9em;
+    }
+    &__select {
+        color: $textColor;
+        border: none;
+        background-color: $secondaryColor;
+        margin-bottom: 10px;
+        font-size: .9em;
+    }
+    &__li {
+        padding-left: 10px;
+    }
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    &__button {
+        margin-left: 10px;
+        background-color: $mainColor;
+        color: $secondaryColor;
+        padding: 6px;
+        border: none;
+        border-radius: 3px;
+    }
+    &__input {
+        padding: 6px;
+        border-radius: 3px;
+        background-color: $secondaryColor;
+    }
+}
+
+.tienda .actions {
+    padding: 0 30px;
+    grid-area: actions;
+}
+
+.tienda .filters {
+    grid-area: filters;
+}
+
+.tienda .prod1 {
+    grid-area: prod1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tienda .prod1 p {
+    width: 50%;
+    margin-left: 50px;
+}
+
+.tienda .prod1 img {
+    width: 350px;
+    height: 350px;
+    margin-bottom: 20px;
+}
+
+.tienda .prod2 {
+    grid-area: prod2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    margin-right: 20px;
+}
+
+.tienda .prod2 img {
+    width: 330px;
+    height: 300px;
+    margin-top: 50px;
+}
+
+.tienda .prod3 {
+    grid-area: prod3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    margin-left: 20px;
+}
+
+.tienda .prod3 img {
+    width: 350px;
+    height: 350px;
+}
+
+.tienda section {
+    border-radius: 10px;
+}
+
+// contactanos grid
+
+.contact{
+    &__img {
+        margin-bottom: 55px;
+        margin-right: 50px;
+        height: 800px;
+        width: 800px;
+    }
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 800px 800px;
+    &__section {
+        margin-top: 50px;
+    }
+}
+
+.section{
+    &__title {
+        font-size: 25px;
+        margin-bottom: 20px;
+        white-space: nowrap;
+        margin-left: 20px;
+    }
+}
+
+.contactar{
+    &--espacio {
+        font-size: 15px;
+        font-weight: 400;
+        padding-top: 10px;
+        display: block;
+        margin-left: 20px;
+    }
+    &--input {
+        padding: 12px 0;
+        width: 800px;
+        margin-bottom: 30px;
+        margin-left: 20px;
+        border: 0;
+        border-bottom: 2px solid $mainColor;
+        color: $secondaryColor;
+    }
+    &--enviar {
+        display: block;
+        font-size: 20px;
+        border-radius: 0;
+        color: $secondaryColor;
+        font-weight: 500;
+        display: block;
+        width: 100%;
+        height: 80px;
+        background: $mainColor;
+        margin-left: 20px;
+    }
+}
