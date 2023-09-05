@@ -1,10 +1,12 @@
 
 .error{
     &__text{
+        font-family: $mainFont;
         text-align: center;
         color: $mainColor;
     }
     &__link{
+        font-family: $mainFont;
         text-align: center;
         color: $textColor;
     }

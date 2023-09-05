@@ -1,4 +1,17 @@
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.html{
+    font-size: 92.5%;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+}
+
 .header{
     &__img {
         width: 100%;
@@ -13,6 +26,7 @@
 }
 
 .box-top {
+    font-family: $mainFont;
     padding: 4px 0;
     text-align: center;
 }
@@ -38,6 +52,7 @@
 
 .h2{
     &__nosotros{
+        font-family: $mainFont;
         color: $nosColor;
         text-align: center;
         &-community{
@@ -48,6 +63,7 @@
             font-weight: bold;
         }
         &-p{
+            font-family: $mainFont;
             font-size: 25px;
             padding-left: 200px;
             padding-right: 200px;

@@ -1,65 +1,95 @@
 // proximamente grid
 .filters {
+    font-family: $mainFont;
     padding: 0 20px 30px 30px;
-    &__a {
-        font-size: .9em;
-        text-decoration: none;
-        background-color: $secondaryColor;
-        color: $textColor;
-        margin-bottom: 4px;
-        &:hover {
-            background-color: $secondaryColor;
-            color: $mainColor;
-        }
-    }
-    &__span {
-        display: block;
-        color: $textColor;
-        margin: 10px 0;
-        letter-spacing: 1px;
-        font-size: .9em;
-    }
-    &__select {
-        color: $textColor;
-        border: none;
-        background-color: $secondaryColor;
-        margin-bottom: 10px;
-        font-size: .9em;
-    }
-    &__li {
-        padding-left: 10px;
-    }
+}
+
+.filters__a {
+    font-family: $mainFont;
+    font-size: .9em;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    margin-bottom: 4px;
+}
+
+.filters__a:hover {
+    background-color: white;
+    color: red;
+}
+
+.filters__span {
+    font-family: $mainFont;
+    display: block;
+    color: black;
+    margin: 10px 0;
+    letter-spacing: 1px;
+    font-size: .9em;
+}
+
+.filters__select {
+    font-family: $mainFont;
+    color: black;
+    border: none;
+    background-color: white;
+    margin-bottom: 10px;
+    font-size: .9em;
+}
+
+.filters__li {
+    font-family: $mainFont;
+    padding-left: 10px;
 }
 
 .actions {
+    font-family: $mainFont;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    &__button {
-        margin-left: 10px;
-        background-color: $mainColor;
-        color: $secondaryColor;
-        padding: 6px;
-        border: none;
-        border-radius: 3px;
-    }
-    &__input {
-        padding: 6px;
-        border-radius: 3px;
-        background-color: $secondaryColor;
-    }
+}
+
+.actions__button {
+    font-family: $mainFont;
+    margin-left: 10px;
+    background-color: rgb(218, 35, 35);
+    color: white;
+    padding: 6px;
+    border: none;
+    border-radius: 3px;
+}
+
+.actions__input {
+    font-family: $mainFont;
+    padding: 6px;
+    border-radius: 3px;
+    background-color: white;
+}
+
+.tienda {
+    font-family: $mainFont;
+    display: grid;
+    grid-template-columns: 20% repeat(2, 1fr);
+    grid-template-rows: 80px repeat(3, 300px);
+    gap: 5px;
+    grid-template-areas:
+        "actions actions actions"
+        "filters prod1 prod1"
+        "filters prod2 prod3";
 }
 
 .tienda .actions {
+    font-family: $mainFont;
     padding: 0 30px;
     grid-area: actions;
 }
 
 .tienda .filters {
+    font-family: $mainFont;
     grid-area: filters;
 }
 
 .tienda .prod1 {
+    font-family: $mainFont;
     grid-area: prod1;
     display: flex;
     flex-direction: row;
@@ -78,6 +108,7 @@
 }
 
 .tienda .prod2 {
+    font-family: $mainFont;
     grid-area: prod2;
     display: flex;
     justify-content: center;
@@ -93,6 +124,7 @@
 }
 
 .tienda .prod3 {
+    font-family: $mainFont;
     grid-area: prod3;
     display: flex;
     justify-content: center;
@@ -110,6 +142,7 @@
     border-radius: 10px;
 }
 
+
 // contactanos grid
 
 .contact{
@@ -122,6 +155,7 @@
 }
 
 .form {
+    font-family: $mainFont;
     display: grid;
     grid-template-columns: 800px 800px;
     &__section {
