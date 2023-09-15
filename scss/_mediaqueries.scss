@@ -1,76 +1,53 @@
 @media (max-width: 1720px) {
+    .html {
+        width: 100%;
+    }
     .nav__ul {
-        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .contact__img{
+        padding: 0px 30px;
     }
 }
 
 @media (max-width: 1474px) {
     .nav__ul {
-        padding-left: 0px;
-        width: 170px;
+        padding-right: 50px;
     }
-    
-    .nav__ul-options__link {
-        padding: 10px 45px;
-    }
-    
-    .nav__ul-options {
-        padding: 1px;
-    }
-    
-    .nav-registros {
-        padding: 0px 100px;
-        width: 60px;
+    .contact__img{
+        padding: 0px 20px;
     }
 }
 
-@media (max-width: 1090px) {
+@media (max-width: 1190px) {
+    .nav__ul__li-a {
+        margin: 0px 50px 0px 70px;
+    }
+    .contact__img{
+        padding: 0px 20px;
+    }
+}
+
+@media (max-width: 993px) {
     .nav__ul {
-        width: 150px;
-        margin-right: 140px;
+        display: inline-block;
     }
-    
-    .nav__ul-options__link {
-        padding: 10px 45px;
+    .nav__ul__li-a{ 
+        margin: 0px 20px 0px 30px;
+    }
+    .contact__img{
+        padding: 0px 15px;
     }
 }
 
-@media (max-width: 725px){
+@media (max-width: 640px) {
     .nav__ul {
-        width: 120px;
-        margin-right: 150px;
+        width: 100%;
     }
-    
-    .nav__ul-options__link {
-        padding: 30px;
+    .nav__ul__li-a{
+    margin: 0px 10px 0px 20px;
     }
-}
-
-@media (max-width: 776px){
-    .nav{
-        width: 800px;
-    }
-    .html{
-        width: 800px;
-    }
-}
-
-@media (max-width: 716px){
-    .nav{
-        width: 800px;
-    }
-}
-
-@media (max-width: 635px){
-    .nav{
-        height: 100px;
-        width: 800px;
-        padding: 0px 50px;
-    }
-    .banner__img{
-        width: 2000%;
-    } 
-    .html{
-        width: 800px;
+    .contact__img{
+    padding: 0px 10px;
     }
 }

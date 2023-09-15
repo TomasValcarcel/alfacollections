@@ -1,4 +1,4 @@
-.nav {
+/* .nav {
     background-color: $mainColor;
     position: sticky;
     display: flex;
@@ -31,4 +31,26 @@
         justify-content: space-between;
         margin-right: 30px;
     }
+} */
+
+.nav {
+    background-color: $mainColor;
+    &__logo-img{
+        width: 70px;
+        height: 70px;
+    }
+    &__ul{
+        font-family: $mainFont;
+        &__li{
+            &-a {
+                text-decoration: none;
+                color: $secondaryColor;
+                margin: 0px 120px 0px 90px;
+                &:hover{
+                    background-color: $mainColor;
+                    color: black;
+                }
+            }    
+         }
+        }
 }
